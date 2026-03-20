@@ -28,6 +28,9 @@ button {
   background-color: transparent;
   border: none;
   outline: none;
+  color: currentColor;
+  margin: 0;
+  padding: 0;
 }
 
 img {
