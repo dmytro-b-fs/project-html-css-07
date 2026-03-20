@@ -60,8 +60,8 @@
 
 @media only screen and (min-width:1440px) {
   .hero_container {
-    padding-top: 234px;
-    padding-bottom: 234px;
+    padding-top: 326px;
+    padding-bottom: 326px;
     padding-right: 730px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
     url(../img/hero/hero-background-desktop@1x.jpg);
