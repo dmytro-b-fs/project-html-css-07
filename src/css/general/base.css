@@ -1,5 +1,5 @@
 body {
-  font-family: "Public Sans", sans-serif;
+  font-family: 'Public Sans', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
@@ -8,7 +8,7 @@ body {
 }
 
 h1, h2 {
-  font-family: "Chivo", sans-serif;
+  font-family: 'Chivo', sans-serif;
   line-height: 1.2;
   letter-spacing : -0.01em;
   color: currentColor; 
