@@ -53,12 +53,17 @@
 }
 
 .benefits-title {
+  font-weight: 400;
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: -0.01em;
   margin-bottom: 24px;
 }
-
+@media only screen and (min-width: 1440px) {
+  .benefits-title {
+    font-size: 48px;
+  }
+}
 .benefits-desc {
   font-size: 18px;
 }
@@ -93,6 +98,7 @@
 }
 
 .benefits-text {
+  font-weight: 400;
   font-size: 20px;
   line-height: 1.4;
   letter-spacing: -0.01em;
