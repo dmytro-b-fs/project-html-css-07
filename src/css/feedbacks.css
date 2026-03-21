@@ -34,6 +34,7 @@ letter-spacing: -0.01em;
 text-align: center;
 color: #010400;
 font-family: "Chivo", sans-serif;
+padding-bottom: 16px;
 }
 .feedbacks-list {
     display: flex;
@@ -97,11 +98,21 @@ width: 100%;
     .feedbacks_container {
    padding: 64px 32px;
 }
+.title-feedbacks
+{
+    padding: 0;
+    padding-bottom: 24px;
+}
 .feedbacks-content
 {
     width: calc((100% - 24px) / 2); 
     margin: 0;
     
+}
+.feedbacks-header
+{
+    max-width: 644px;
+    margin:0 auto;
 }
 }
 
@@ -109,6 +120,7 @@ width: 100%;
 @media screen and (min-width: 1440px) {
     .feedbacks_container {
    padding: 112px 64px;
+   gap:0;
 }
 
 .feedbacks-content
@@ -118,7 +130,6 @@ width: 100%;
 .title-feedbacks
 {
     font-size: 48px;
-    margin-bottom: 24px;
 }
 .subtitle-feedbacks
 {
