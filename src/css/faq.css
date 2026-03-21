@@ -1,13 +1,15 @@
 .faq-container {
+  width: 100%;
   max-width: 375px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 16px;
 }
 
-.faq {
-  padding: 64px 16px;
+.faq-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
   background-color: #5e8a4d;
   color: #ffffff;
 }
@@ -29,7 +31,6 @@
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
 }
 
 .faq-list {
@@ -42,8 +43,9 @@
 }
 
 .faq-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 24px 0;
 }
 
 .faq-question {
@@ -54,7 +56,8 @@
   font-weight: 700;
   margin-bottom: 12px;
   line-height: 1.5;
-  letter-spacing: 0;
+  padding: 0;
+  gap: 24px;
 }
 
 .faq-icon {
@@ -69,81 +72,50 @@
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0;
+  padding: 0;
+  margin-top: 12px;
 }
 
 @media screen and (min-width: 768px) {
-  .faq {
-    padding: 64px 32px;
-  }
-
   .faq-container {
     max-width: 704px;
-    gap: 48px;
-  }
-
-  .faq-title {
-    font-size: 36px;
-  }
-
-  .faq-text {
-    font-size: 18px;
   }
 
   .faq-list {
     margin-top: 32px;
   }
-
-  .faq-item {
-    padding: 28px 0;
-  }
-
-  .faq-question {
-    font-size: 18px;
-  }
-
-  .faq-answer {
-    font-size: 16px;
-  }
 }
 
 @media screen and (min-width: 1440px) {
-  .faq {
-    padding: 112px 64px;
+  .faq-section {
+    padding-top: 112px;
+    padding-bottom: 112px;
   }
 
   .faq-container {
     max-width: 1312px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 400px 1fr;
-    gap: 64px;
+    grid-template-columns: 421px 1fr;
+    gap: 24px;
     align-items: start;
+  }
+
+  .faq-header {
+    max-width: 421px;
   }
 
   .faq-title {
     font-size: 48px;
   }
 
-  .faq-header {
-    max-width: 400px;
-  }
-
   .faq-text {
     font-size: 16px;
-    max-width: 400px;
   }
 
   .faq-list {
     margin-top: 0px;
-  }
-
-  .faq-item {
-    padding: 32px 0;
-  }
-
-  .faq-question {
-    font-size: 18px;
+    max-width: 867px;
   }
 
   .faq-answer {
