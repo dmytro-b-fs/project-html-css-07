@@ -1,6 +1,5 @@
 .faq-container {
   width: 100%;
-  max-width: 375px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -17,7 +16,7 @@
 .faq-header {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
 
 .faq-title {
@@ -38,13 +37,12 @@
   flex-direction: column;
   list-style: none;
   padding: 0;
-  margin-top: 24px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .faq-item {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 23px;
+  padding-bottom: 24px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -54,7 +52,7 @@
   align-items: center;
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 23px;
   line-height: 1.5;
   padding: 0;
   gap: 24px;
@@ -73,17 +71,6 @@
   line-height: 1.5;
   font-weight: 400;
   padding: 0;
-  margin-top: 12px;
-}
-
-@media screen and (min-width: 768px) {
-  .faq-container {
-    max-width: 704px;
-  }
-
-  .faq-list {
-    margin-top: 32px;
-  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -93,7 +80,6 @@
   }
 
   .faq-container {
-    max-width: 1312px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 421px 1fr;
@@ -103,18 +89,14 @@
 
   .faq-header {
     max-width: 421px;
+    gap: 24px;
   }
 
   .faq-title {
     font-size: 48px;
   }
 
-  .faq-text {
-    font-size: 16px;
-  }
-
   .faq-list {
-    margin-top: 0px;
     max-width: 867px;
   }
 
