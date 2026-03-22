@@ -1,40 +1,11 @@
-.mission_container {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #5e8a4d;
-}
-
-.mission-title {
-  font-family: 'Chivo', sans-serif;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 1.2;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.mission-text {
-  font-family: 'Public Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.mission-image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 /* ============================================================
    1. МОБИЛКА (до 767px) 
    ============================================================ */
 
 .mission_container {
   background-color: #5e8a4d;
-  padding: 40px 16px;
+  padding: 40px 0;
+  text-align: center;
 }
 
 .mission-title {
@@ -44,7 +15,8 @@
   line-height: 1.2;
   letter-spacing: -0.01em;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  padding: 0 16px;
 }
 
 .mission-text {
@@ -53,13 +25,15 @@
   font-size: 14px;
   line-height: 1.5;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .mission-image {
   display: block;
   width: 100%;
   height: auto;
+  margin: auto;
+  max-width: 375px;
 }
 
 /* ============================================================
@@ -67,30 +41,21 @@
    ============================================================ */
 @media screen and (min-width: 768px) {
   .mission_container {
-    /* Точно по синим цифрам на твоих фото */
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 80px 0;
   }
 
   .mission-title {
     font-size: 40px;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
     margin-bottom: 24px;
-    max-width: 556px;
-    letter-spacing: -0.01em;
-    color: #fff;
   }
 
   .mission-text {
-    font-family: 'Publik Sans', sans-serif;
     font-size: 18px;
-    line-height: 1.5;
     margin-bottom: 32px;
-    max-width: 556px;
-    color: #fff;
+  }
+
+  .mission-image {
+    max-width: 704px;
   }
 }
 
@@ -98,44 +63,32 @@
    3. ДЕКСTОП (от 1440px)
    ============================================================ */
 @media screen and (min-width: 1440px) {
-  .mission_container {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-
+  /* Контейнер для заголовка и текста (два столбика) */
   .mission-content {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 24px; /* Расстояние между заголовком и текстом */
-    margin-bottom: 40px; /* Отступ от текстового ряда до картинки */
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 80px;
+    padding: 0 64px;
+  }
+
+  .mission-title,
+  .mission-text {
+    /* Ширина колонок: (1312px контент - 24px gap) / 2 = 644px */
+    width: 644px;
+    text-align: left;
+    margin-bottom: 0;
+    padding: 0;
   }
 
   .mission-title {
-    font-family: 'Chivo', sans-serif;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    color: #fff;
-    width: 644px; /* Ширина из Inspect */
-    margin-bottom: 0; /*нижний отступ */
+    font-size: 48px; /* Размер заголовка для десктопа */
   }
 
-  .mission-text {
-    font-family: 'Public Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #fff;
-    width: 644px; /* Ширина из Inspect */
-    margin-bottom: 0;
-  }
-
+  /* Сама картинка */
   .mission-image {
-    width: 100%;
-    height: auto;
+    max-width: 1312px; /* Ширина картинки по сетке (1440 - 64 - 64) */
+    margin: 0 auto;
+    display: block;
   }
 }
