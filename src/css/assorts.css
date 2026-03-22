@@ -1,0 +1,116 @@
+.assorts {
+  background: #d1ddcc;
+  padding: 64px 0;
+}
+@media only screen and (min-width: 1440px) {
+  .assorts {
+    padding: 112px 0;
+  }
+}
+.assorts-subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  color: #010400;
+  margin-bottom: 16px;
+}
+.assorts-title {
+  font-weight: 400;
+  color: #010400;
+  max-width: 344px;
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 1440px) {
+  .assorts-title {
+    font-size: 48px;
+    max-width: 768px;
+    margin-bottom: 32px;
+  }
+}
+.assorts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media only screen and (min-width: 768px) {
+  .assorts-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .assorts-list {
+    gap: 24px;
+  }
+}
+.assorts-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 343px;
+}
+@media only screen and (min-width: 768px) {
+  .assorts-item {
+    max-width: 344px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .assorts-item {
+    max-width: 310px;
+  }
+}
+.assorts-img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.assorts-card-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.assorts-card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 58px;
+}
+.assorts-caption {
+  font-weight: 600;
+  font-size: 18px;
+  color: #010400;
+}
+.assorts-desc {
+  font-size: 14px;
+  color: #010400;
+}
+.assorts-price {
+  font-weight: 600;
+  font-size: 20px;
+  color: #010400;
+}
+.assorts-amount {
+  font-size: 10px;
+  line-height: 1.3;
+  text-align: right;
+  color: #010400;
+  max-width: 53px;
+}
+.assorts-btn {
+  color: #010400;
+
+  border: 1px solid rgba(1, 4, 0, 0.15);
+  border-radius: 6px;
+  padding: 4px 10px;
+  width: 100%;
+  height: 40px;
+
+  margin-top: auto;
+
+  transition:
+    color 250ms ease-in-out,
+    background-color 250ms ease-in-out;
+}
+.assorts-btn:hover,
+.assorts-btn:focus {
+  color: #fff;
+  background-color: #1a5901;
+}
