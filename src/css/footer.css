@@ -1,6 +1,8 @@
 .footer {
   background-color: #0a2300;
   text-align: center;
+padding-top: 80px ;
+padding-bottom: 80px;
 }
 
 .social-footer-list {
@@ -17,7 +19,7 @@
   padding: 24px 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 32px;
   align-items: center;
 }
 
@@ -46,21 +48,19 @@
 .social-footer-logo {
   fill: #fff;
 }
-.footer-container {
-  padding-top: 80px;
-}
+
 @media screen and (min-width: 768px) {
   .footer-nav-list {
     flex-direction: row;
     justify-content: center;
-    gap: 32px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .footer {
-    padding: 80px 60px;
     text-align: left;
+    padding-top: 112px;
+    padding-bottom: 112px;
   }
 
   .footer-container {
@@ -81,6 +81,7 @@
   .footer-copyright {
     align-items: center;
     width: 100%;
+    margin-top: 0;
   }
   .footer-logo {
     width: 84px;
