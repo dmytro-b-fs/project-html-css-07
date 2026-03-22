@@ -1,20 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Organic Shop | Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@100..900&family=Public+Sans:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@100..900&family=Public+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <load src="/partials/header.html"/>
+    <load src="/partials/header.html" />
 
     <main>
       <load src="./partials/hero.html" />
@@ -29,6 +36,50 @@
     <load src="./partials/footer.html" />
 
     <load src="./partials/burgermenu.html" />
+    <div class="menu-overlay">
+      <div class="navbar">
+        <div class="logo-close-thumb">
+          <a href="./index.html">
+            <svg class="logotype" width="142" height="60">
+              <use href="./img/icons.svg#logo-icon"></use>
+            </svg>
+          </a>
+          <button class="navbar-btn-close" type="button">
+            <svg class="navbar-close-icon" width="32" height="32">
+              <use href="./img/icons.svg#close-icon"></use>
+            </svg>
+          </button>
+        </div>
+
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li>
+              <a href="#home" class="menu-nav-link">Home</a>
+            </li>
+            <li>
+              <a href="#mission" class="menu-nav-link">Mission</a>
+            </li>
+            <li>
+              <a href="#benefits" class="menu-nav-link">Benefits</a>
+            </li>
+            <li>
+              <a href="#assorts" class="menu-nav-link current">Assortment</a>
+            </li>
+            <li>
+              <a href="#feedbacks" class="menu-nav-link current">Feedbacks</a>
+            </li>
+            <li>
+              <a href="#faq" class="menu-nav-link current">FAQ</a>
+            </li>
+            <li>
+              <a href="#contacts" class="menu-nav-link current">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <button class="order-btn" type="button">Order</button>
+    </div>
 
     <script type="module" src="/main.js"></script>
   </body>
