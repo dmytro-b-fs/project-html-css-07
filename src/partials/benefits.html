@@ -1,5 +1,86 @@
-<section class="benefits section">
-    <div class="benefits_container container">
-
+<section class="benefits section" id="benefits">
+  <div class="benefits_container container">
+    <div class="benefits-wrapper">
+      <div class="benefits-left-side">
+        <picture class="benefits-img">
+          <source
+            media="(min-width:1440px)"
+            srcset="
+              ./img/benefits/benefits-image-desktop@1x.jpg 1x,
+              ./img/benefits/benefits-image-desktop@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width:768px)"
+            srcset="
+              ./img/benefits/benefits-image-tablet@1x.jpg 1x,
+              ./img/benefits/benefits-image-tablet@2x.jpg 2x
+            "
+          />
+          <img
+            src="./img/benefits/benefits-image-mobile@1x.jpg"
+            srcset="
+              ./img/benefits/benefits-image-mobile@1x.jpg 1x,
+              ./img/benefits/benefits-image-mobile@2x.jpg 2x
+            "
+            alt="Organic food"
+          />
+        </picture>
+      </div>
+      <div class="benefits-right-side">
+        <div class="benefits-title-block">
+          <h2 class="benefits-title">Why Choose Organic?</h2>
+          <p class="benefits-desc">
+            Organic products offer a healthier choice for you and your family.
+            With no synthetic pesticides or GMOs, you can enjoy better nutrition
+            and natural flavors while supporting sustainable farming practices.
+          </p>
+        </div>
+        <ul class="benefits-list">
+          <li class="benefits-item">
+            <svg class="benefits-icon" width="48" height="48">
+              <use href="./img/icons.svg#healthcare-icon"></use>
+            </svg>
+            <h3 class="benefits-text">Better for Your Health</h3>
+            <p class="benefits-capt">
+              Organic foods are grown without synthetic chemicals, making them
+              safer for your body. They're rich in antioxidants and nutrients
+              that support your immune system and long-term well-being.
+            </p>
+          </li>
+          <li class="benefits-item">
+            <svg class="benefits-icon" width="48" height="48">
+              <use href="./img/icons.svg#basketball-icon"></use>
+            </svg>
+            <h3 class="benefits-text">Protecting the Planet</h3>
+            <p class="benefits-capt">
+              Organic farming reduces pollution, conserves water, and improves
+              soil health. By choosing organic, you're helping build a cleaner,
+              more sustainable environment for future generations.
+            </p>
+          </li>
+          <li class="benefits-item">
+            <svg class="benefits-icon" width="48" height="48">
+              <use href="./img/icons.svg#restaurant-icon"></use>
+            </svg>
+            <h3 class="benefits-text">Fruits & Vegetables</h3>
+            <p class="benefits-capt">
+              Freshly picked organic produce delivered straight from local farms
+              to your table.
+            </p>
+          </li>
+          <li class="benefits-item">
+            <svg class="benefits-icon" width="48" height="48">
+              <use href="./img/icons.svg#cheese-icon"></use>
+            </svg>
+            <h3 class="benefits-text">Dairy Products</h3>
+            <p class="benefits-capt">
+              Creamy, organic dairy options that are both delicious and
+              ethically sourced.
+            </p>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 </section>
