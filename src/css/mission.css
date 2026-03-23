@@ -1,0 +1,113 @@
+/* ============================================================
+   1. МОБИЛКА (до 767px) 
+   ============================================================ */
+
+.mission_container {
+  background-color: #5e8a4d;
+  text-align: center;
+  text-align: start;
+}
+
+.mission-title {
+  font-family: 'Chivo', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.mission-text {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.mission-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  max-width: 375px;
+  margin-top: 32px;
+}
+.mission-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+/* ============================================================
+   2. ПЛАНШЕТ (от 768px до 1439px)
+   ============================================================ */
+@media screen and (min-width: 768px) {
+  .mission_container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-direction: row; /* Текст и фото в ряд */
+    justify-content: space-between;
+  }
+
+  .mission-title {
+    font-size: 40px;
+    margin-bottom: 24px;
+    min-width: 340px;
+    max-width: calc(50% - 12px);
+    margin-bottom: 0;
+  }
+
+  .mission-text {
+    font-size: 18px;
+    margin-bottom: 32px;
+    min-width: 340px;
+    min-width: calc(50% - 12px);
+  }
+
+  .mission-image {
+    max-width: 704px;
+    margin-top: 0;
+  }
+  .mission-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+/* ============================================================
+   3. ДЕКСTОП (от 1440px)
+   ============================================================ */
+@media screen and (min-width: 1440px) {
+  /* Контейнер для заголовка и текста (два столбика) */
+  .mission_container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .mission-title,
+  .mission-text {
+    /* Ширина колонок: (1312px контент - 24px gap) / 2 = 644px */
+    width: 644px;
+    text-align: left;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .mission-title {
+    font-size: 48px; /* Размер заголовка для десктопа */
+  }
+
+  /* Сама картинка */
+  .mission-image {
+    max-width: 1312px; /* Ширина картинки по сетке (1440 - 64 - 64) */
+    margin: 0 auto;
+    display: block;
+  }
+  .mission-section {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+}
