@@ -2,6 +2,10 @@
   background-color: #1a5901;
 }
 
+.benefits-text {
+  font-family: "Chivo", sans-serif;
+}
+
 .benefits_container {
   padding-top: 64px;
   padding-bottom: 64px;

@@ -1,8 +1,8 @@
 .footer {
   background-color: #0a2300;
   text-align: center;
-padding-top: 80px ;
-padding-bottom: 80px;
+  padding-top: 80px ;
+  padding-bottom: 80px;
 }
 
 .social-footer-list {
@@ -10,17 +10,17 @@ padding-bottom: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 11px;
+  margin-top: 24px;
 }
 
 .footer-nav-list {
   list-style: none;
   padding: 0;
-  padding: 24px 0;
   display: flex;
   flex-direction: column;
   gap: 32px;
   align-items: center;
+  margin-top: 24px;
 }
 
 .footer-nav-link,
@@ -28,6 +28,14 @@ padding-bottom: 80px;
   color: #fff;
   text-decoration: none;
   transition: color 0.3s;
+}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-nav-link:hover,
@@ -42,9 +50,19 @@ padding-bottom: 80px;
   margin-top: 40px;
   text-align: center;
 }
+.footer-logo-ref{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .footer-logo {
   fill: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .social-footer-logo {
   fill: #fff;
 }
@@ -58,18 +76,21 @@ padding-bottom: 80px;
     margin-top: 40px;
   }
   .social-footer-logo{
-    width: 24;
-    height: 24;
+    width: 24px;
+    height: 24px;
   }
-  
+  .footer-logo {
+    justify-content: center;
+  }
+
 }
 
 
 @media screen and (min-width: 1440px) {
   .footer {
     text-align: left;
-    padding-top: 112px;
-    padding-bottom: 112px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   .footer-container {
@@ -77,7 +98,9 @@ padding-bottom: 80px;
     flex-direction: column;
     gap: 80px;
   }
-
+  .footer-nav-link{
+    padding: 10px 0;
+  }
 
   .footer-content {
     display: grid;
@@ -90,15 +113,20 @@ padding-bottom: 80px;
     flex-direction: row;
     gap: 32px;
     justify-self: center; 
+    margin: 0;
   }
 
   .social-footer-list {
     justify-self: end; 
+    margin: 0;
   }
 
-  .footer-logo {
+  .footer-logo-ref {
     width: 84px;
     height: 36px;
+  }
+  .footer-logo {
+    justify-content: flex-start;
   }
 
   .footer-copyright {
