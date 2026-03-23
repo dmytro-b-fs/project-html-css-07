@@ -46,6 +46,8 @@
     display: flex;
     align-items: center;
     gap: 32px;
+    flex-direction: row; /* Текст и фото в ряд */
+    justify-content: center;
   }
 
   .mission-title {
@@ -64,12 +66,6 @@
   .mission-section {
     padding-top: 64px;
     padding-bottom: 64px;
-  }
-  .mission-content {
-    display: flex; /* Делаем две колонки */
-    flex-direction: row; /* Текст и фото в ряд */
-    align-items: center;
-    gap: 32px; /* Дима просил для планшета именно 32px! */
   }
 }
 
