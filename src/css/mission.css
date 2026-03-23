@@ -4,7 +4,6 @@
 
 .mission_container {
   background-color: #5e8a4d;
-  padding: 40px 0;
   text-align: center;
 }
 
@@ -35,13 +34,18 @@
   margin: auto;
   max-width: 375px;
 }
-
+.mission-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
 /* ============================================================
    2. ПЛАНШЕТ (от 768px до 1439px)
    ============================================================ */
 @media screen and (min-width: 768px) {
   .mission_container {
-    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    gap: 32px;
   }
 
   .mission-title {
@@ -57,6 +61,16 @@
   .mission-image {
     max-width: 704px;
   }
+  .mission-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  .mission-content {
+    display: flex; /* Делаем две колонки */
+    flex-direction: row; /* Текст и фото в ряд */
+    align-items: center;
+    gap: 32px; /* Дима просил для планшета именно 32px! */
+  }
 }
 
 /* ============================================================
@@ -64,12 +78,10 @@
    ============================================================ */
 @media screen and (min-width: 1440px) {
   /* Контейнер для заголовка и текста (два столбика) */
-  .mission-content {
+  .mission_container {
     display: flex;
     justify-content: center;
-    gap: 24px;
-    margin-bottom: 80px;
-    padding: 0 64px;
+    gap: 80px;
   }
 
   .mission-title,
@@ -90,5 +102,9 @@
     max-width: 1312px; /* Ширина картинки по сетке (1440 - 64 - 64) */
     margin: 0 auto;
     display: block;
+  }
+  .mission-section {
+    padding-top: 112px;
+    padding-bottom: 112px;
   }
 }
