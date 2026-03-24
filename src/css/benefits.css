@@ -6,26 +6,26 @@
   font-family: "Chivo", sans-serif;
 }
 
-.benefits_container {
+.benefits {
   padding-top: 64px;
   padding-bottom: 64px;
 }
 
 @media only screen and (min-width: 1440px) {
-  .benefits_container {
+  .benefits {
     padding-top: 112px;
     padding-bottom: 112px;
   }
 }
 
-.benefits-wrapper {
+.benefits-container {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
 @media only screen and (min-width: 1440px) {
-  .benefits-wrapper {
+  .benefits-container {
     flex-direction: row;
     align-items: center;
   }

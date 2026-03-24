@@ -5,7 +5,7 @@
 
 @media screen and (min-width: 1440px) {
   .contact-section .container {
-    padding: 112px 64px;
+    padding: 0 64px;
     display: flex;
     flex-direction: row;
     gap: 24px;
@@ -59,6 +59,9 @@
   flex-direction: column;
   justify-content: start;
   gap: 16px;
+
+}
+.contact-address-container{
   margin-bottom: 40px;
 }
 
@@ -98,11 +101,16 @@
     margin-bottom: 24px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .form-contact-section {
+    margin-bottom: 0;
+  }
+}
 
 .contact-form-label {
   color: #010400;
   display: block;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   font-size: 16px;
 }
 
@@ -183,9 +191,13 @@
 .comment:not(:placeholder-shown):valid {
   border-color: green;
 }
+.input-box{
+  position: relative;
+}
 
 .text-valid,
 .text-invalid {
+  position: absolute;
   font-size: 12px;
   display: none;
 }
