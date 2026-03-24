@@ -27,7 +27,9 @@
 .social-link {
   color: #fff;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
 }
 
 .social-link {
@@ -40,7 +42,7 @@
 
 .footer-nav-link:hover,
 .social-link:hover {
-  color: #7abd64;
+  opacity: 0.8;
 }
 
 .footer-copyright {
