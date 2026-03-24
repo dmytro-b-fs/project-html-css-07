@@ -39,6 +39,10 @@
   padding-top: 64px;
   padding-bottom: 64px;
 }
+.mission-text {
+    font-size: 18px;
+}
+
 /* ============================================================
    2. ПЛАНШЕТ (от 768px до 1439px)
    ============================================================ */
@@ -47,13 +51,11 @@
     display: flex;
     align-items: center;
     gap: 32px;
-    flex-direction: row; /* Текст и фото в ряд */
-    justify-content: space-between;
+    flex-direction: column; /* Текст и фото в ряд */
   }
 
   .mission-title {
-    font-size: 40px;
-    margin-bottom: 24px;
+    font-size: 36px;
     min-width: 340px;
     max-width: calc(50% - 12px);
     margin-bottom: 0;
@@ -63,7 +65,7 @@
     font-size: 18px;
     margin-bottom: 32px;
     min-width: 340px;
-    min-width: calc(50% - 12px);
+    max-width: calc(50% - 12px);
   }
 
   .mission-image {
@@ -73,6 +75,11 @@
   .mission-section {
     padding-top: 64px;
     padding-bottom: 64px;
+  }
+  .mission-content {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
   }
 }
 
@@ -90,7 +97,6 @@
   .mission-title,
   .mission-text {
     /* Ширина колонок: (1312px контент - 24px gap) / 2 = 644px */
-    width: 644px;
     text-align: left;
     margin-bottom: 0;
     padding: 0;

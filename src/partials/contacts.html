@@ -1,3 +1,107 @@
-<section class="contacts section">
-  <div class="contacts_container container"></div>
+<section class="contact-section section" id="contacts">
+  <div class="container">
+    <div class="form-container">
+      <h3 class="contact-subtitle">Contacts</h3>
+      <h2 class="contact-title">Get in Touch</h2>
+      <p class="text-contact">We'd love to hear from you anytime!</p>
+      <ul class="list-contact-section">
+        <li class="item-contact-section">
+          <svg class="icon-section-contact" width="24" height="24">
+            <use href="./img/icons.svg#email-icon"></use>
+          </svg>
+
+          <a
+            class="link-contact-section"
+            target="_blank"
+            href="mailto:hello@organicstore.com"
+            >hello@organicstore.com</a
+          >
+        </li>
+        <li class="item-contact-section">
+          <svg class="icon-section-contact" width="24" height="24">
+            <use href="./img/icons.svg#call-icon"></use>
+          </svg>
+
+          <a
+            class="link-contact-section"
+            target="_blank"
+            href="tel:+15553291024"
+            >+1 (555) 329-1024</a
+          >
+        </li>
+      </ul>
+
+      <form class="form-contact-section">
+        <div class="input-box">
+          <label for="name" class="contact-form-label">Name</label>
+          <input
+            class="section-contact-form-item"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Sarah"
+            pattern="^[a-zA-Z\s\.]{5,64}$"
+            required
+          />
+          <p class="text-valid">Succes!</p>
+          <p class="text-invalid">Error text</p>
+        </div>
+        <div class="input-box">
+          <label for="email" class="contact-form-label">Email</label>
+          <input
+            type="email"
+            class="section-contact-form-item"
+            id="email"
+            placeholder="hello@organic.com"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            required
+          />
+          <p class="text-valid">Succes!</p>
+          <p class="text-invalid">Error text</p>
+        </div>
+        <div class="input-box">
+          <label for="comment" class="contact-form-label">Message</label>
+          <textarea
+            class="comment"
+            name="comment"
+            id="comment"
+            rows="6"
+            placeholder="Type your message..."
+            maxlength="500"
+          ></textarea>
+          <p class="text-valid">Succes!</p>
+          <p class="text-invalid">Error text</p>
+        </div>
+        <button class="contact-btn-send" type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="img-container">
+      <picture class="contact-img">
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            ./img/contact/desktop-contact-img.jpg    1x,
+            ./img/contact/desktop-contact-img@2x.jpg 2x
+          "
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/contact/tablet-contact-img.jpg    1x,
+            ./img/contact/tablet-contact-img@2x.jpg 2x
+          "
+        />
+
+        <img
+          src="./img/contact/mobile-contact-img.jpg"
+          alt="Team"
+          srcset="
+            ./img/contact/mobile-contact-img.jpg    1x,
+            ./img/contact/mobile-contact-img@2x.jpg 2x
+          "
+        />
+      </picture>
+    </div>
+  </div>
 </section>
